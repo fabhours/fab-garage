@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   resources :articles
-
-  # The priority is based upon order of creation: first created -> highest priority.
+  # get 'articles' => 'articles#index'
+  # post 'articles' => 'articles#create'
+  # get 'articles/new' => 'articles#new'
+  # get 'articles/:id' => 'articles#show', as: :article
+  # # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
