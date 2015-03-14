@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-  resources :articles
-  # get 'articles' => 'articles#index'
-  # post 'articles' => 'articles#create'
-  # get 'articles/new' => 'articles#new'
-  # get 'articles/:id' => 'articles#show', as: :article
+  resources :articles do
+    resources :comments
+  end
+  resources :users
+  resource :session
+  get '/login' => 'sessions#new', :as => 'login'
+  get '/logout' => 'sessions#destroy', :as => 'logout'
+  root 'articles#index'
+
   # # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

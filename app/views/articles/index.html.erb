@@ -1,10 +1,11 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
 <h1>Listing Articles</h1>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
+      <th>Id</th>
       <th>Title</th>
       <th>Location</th>
       <th>Excerpt</th>
@@ -17,14 +18,15 @@
   <tbody>
     <% @articles.each do |article| %>
       <tr>
+        <td><%= link_to article.id, article_path(article) %></td>
         <td><%= article.title %></td>
         <td><%= article.location %></td>
         <td><%= article.excerpt %></td>
         <td><%= article.body %></td>
         <td><%= article.published_at %></td>
-        <td><%= link_to 'Show', article_path(article.id) %></td>
-        <td><%= link_to 'edit', edit_article_path(article.id) %></td>
-        <td><%= link_to 'Delete', article_path(article.id), method: :delete %></td>
+        <td><%= link_to 'Show', article_path(article) %></td>
+        <td><%= link_to 'edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Delete', article_path(article), method: :delete %></td>
         
         </tr>
     <% end %>
@@ -32,5 +34,7 @@
 </table>
 
 <br>
+ -->
+<%= render @articles %>
 
 <%= link_to 'New Article', new_article_path %>
