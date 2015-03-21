@@ -19,4 +19,15 @@ class Article < ActiveRecord::Base
 	def published?
 		published_at.present?
 	end
+
+	def owned_by?(owner)
+		if owner.is_a?(User) and user == owner
+			return true
+		end
+	end
+
+
+		# return false unless owner.is_a?(User)
+		# user == owner
+	# end
 end
