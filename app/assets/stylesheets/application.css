@@ -14,23 +14,28 @@
  *= require_self
  */
  * {
+ 	/*auto centering everything*/
  	margin: 0 auto;
  }
  body {
- 	background-color: #ff7;
+ 	/*set background color*/
+ 	background-color: #fff;
+ 	/*set text color*/
  	color: #222;
  }
  body, p, ol, ul, td {
  	font-family: verdana, arial, helvetica, sans-serif;
- 	font-size:
- 	16px;
- 	line-height: 20px;
+ 	font-size:16px;
+ 	/*Increasing the line-height
+makes the vertical gap between
+lines of text larger.
+*/ 	line-height: 30px;
  }
- pre {
+/* pre {
  	background-color: #eee;
  	padding: 10px;
  	font-size: 11px;
- }
+ }*/
  p {
  	padding: 5px;
  }
@@ -43,7 +48,7 @@
  
  a:hover {
  	background-color:#FF813C;
- 	color:#FFFFFF;
+ 	/*color:#FFFFFF;*/
  }
  .notice { color: green; }
  .alert { color: red; }
@@ -53,8 +58,9 @@
  }
  
  #header {
+ 	/*this overide rule for BLOG header */
  	font-family:"Myriad Web Pro",Helvetica,Arial,sans-serif;
- 	letter-spacing: 1px;
+ 	letter-spacing: 2px;
  	border-bottom: 5px solid #333333;
  	color:#333333;
  	padding: 15px 0;
@@ -92,6 +98,8 @@
  #header p {
  	float: right;
  }
+
+ /*everithing in yield*/
  #main h1 {
  	font-size: 16px;
  	padding: 10px 0;
@@ -174,7 +182,7 @@
  }
  
  #main h3:hover .actions{
- 	display: inline;
+ 	display: table-column;
  }
  
  .field_with_errors {
@@ -194,6 +202,7 @@
  	border: 2px solid red;
  }
  
+ /*notice and allert*/
  #error_explanation {
  	width: 413px;
  	border: 2px solid orange;
