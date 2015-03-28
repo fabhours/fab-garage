@@ -183,7 +183,7 @@ lines of text larger.
  }
  
  #main h3:hover .actions{
- 	display: table-column;
+ 	display: inline;
  }
  
  .field_with_errors {
