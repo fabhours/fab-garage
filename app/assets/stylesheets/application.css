@@ -31,11 +31,11 @@ makes the vertical gap between
 lines of text larger.
 */ 	line-height: 30px;
  }
-/* pre {
+ pre {
  	background-color: #eee;
  	padding: 10px;
  	font-size: 11px;
- }*/
+ }
  p {
  	padding: 5px;
  }
@@ -48,7 +48,7 @@ lines of text larger.
  
  a:hover {
  	background-color:#FF813C;
- 	/*color:#FFFFFF;*/
+ 	color: black;
  }
  .notice { color: green; }
  .alert { color: red; }
@@ -145,6 +145,7 @@ lines of text larger.
  #main form .field, #main form .actions {
  	padding-top: 10px;
  	clear: both;
+ 	color: black;
  }
  #main form input[type=text], #main form input[type=password], #main form textarea {
  	float: left;
