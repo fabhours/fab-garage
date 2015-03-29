@@ -3,7 +3,7 @@
 	<%= comment.name %> &lt;<%= comment.email %>&gt; said:
 	<span class='actions'>
 		<%= link_to 'Delete', article_comment_path(@article, comment), :confirm => 'Are you sure?',
-		:method => :delete %>	
+		:method => :delete, remote: true %>	
 	</span>
 </h3>
 <%= comment.body %>
